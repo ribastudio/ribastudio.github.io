@@ -15,7 +15,9 @@ body {
 
 h1, h2, ul, a {
     color: white;
+    text-decoration: none;
 }
+
 h1 {
     font-size: 3em;
     text-align: right;
@@ -31,24 +33,33 @@ ul li {
 }
 
 /* Formatação das classes */
+.wrapper {
+    padding: 30px 0 30px 0;
+}
 
 .head-container {
     display: flex;
     align-items: center;
     margin: 0px 30px 0 0;
+    align-content: space-between;
 }
 
 .subtitle {
     font-size: 1.3em;
     margin: 0px 30px 0 0;
-}
-
-a:hover {
-    color: rgba(255,255,255,0.2);
+    text-align: right;
 }
 
 .main-color {
-    color:aliceblue
+    color:aliceblue;
+}
+a:hover {
+    color: rgba(255,255,255,0.6);
+}
+
+.icon-container a::after {
+    content: "   |";
+    padding-right: 15px;
 }
 
 .icon-container {
@@ -62,6 +73,6 @@ a:hover {
 }
 
 .photo {
-    margin: 50px 50px 50px 0px;
+    margin: 50px 50px 00px 0px;
     border-radius: 50%;
 }
